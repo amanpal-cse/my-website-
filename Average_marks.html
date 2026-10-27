@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Average Marks</title>
+</head>
+<body>
+<script>
+    let marks = [];
+    for (let i = 0; i < 5; i++) {
+        marks[i] = Number(prompt("Enter marks for subject " + (i + 1) + ":"));
+    }
+
+    let total = 0;
+
+    for (let i = 0; i < marks.length; i++) {
+        total += marks[i];
+    }
+    let average = total / marks.length;
+    document.write("Average Marks = " + average);
+</script>
+</body>
+</html>

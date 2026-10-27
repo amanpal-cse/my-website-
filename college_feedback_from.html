@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Feedback</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #fce4ec;
+        }
+        form {
+            width: 350px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+            color: #c2185b;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background: #c2185b;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Feedback Form</h2>
+
+        Name:
+        <input type="text" required>
+
+        Email:
+        <input type="email" required>
+
+        Rating:
+        <select required>
+            <option value="">Select Rating</option>
+            <option>Excellent</option>
+            <option>Good</option>
+            <option>Average</option>
+            <option>Poor</option>
+        </select>
+
+        Comments:
+        <textarea rows="4"
+                  placeholder="Write your feedback"></textarea>
+
+        <input type="submit" value="Submit Feedback">
+    </form>
+</body>
+</html>
